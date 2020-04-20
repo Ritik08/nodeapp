@@ -13,7 +13,7 @@ INSTALLATION:-
 UI change:
 For "Company name" "logo" and background:
 
-In Web.ejs and result.ejs make the required changes.
+In Views->Web.ejs and Views->result.ejs make the required changes.
 and styling can be done on public->Styles->style.css.
 
 
