@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic" rel="stylesheet"
+        type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+        integrity="sha256-1fEPhSsRKlFKGfK3eO710tEweHh1fwokU5wFGDHO+vg=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/app.js"></script>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png" width="45" alt=""
+                    class="d-inline-block align-middle mr-2">
+                <!-- Logo Text -->
+                <span class="text-uppercase font-weight-bold">Company</span>
+            </a>
+
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link">Home&nbsp; &nbsp; <span
+                                class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services&nbsp; </a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="super">
+        <div id="snhb-sidebar_sticky-0" class=left-ad1>
+        </div>
+        <div id="snhb-sidebar_sticky-0" class=right-ad1>
+        </div>
+        <!-- main area -->
+        <div class="main">
+            <div id="drop-region" class="sub">
+                <div id="image01" class="image" data-position="center">
+                    <img src="images/image01.png" alt="" />
+                </div>
+                <div class="drop-message">
+                    Drag & Drop images
+                    or Click here
+                </div>
+            </div>
+            <div class="buttons">
+                <form id="img-form" action="/" method="post" enctype="multipart/form-data">
+                    <input type="file" name="photo" accept="image/*" id="uplbtn" hidden="hidden" />
+                    <button class="btn1" id="btn1" type="button">Upload</button>
+                    <button class="btn3" id="btn3" type="button" onClick="window.location.reload();"> Remove</button>
+                </form>
+            </div>
+            <div id="image-preview">
+            </div>
+            <div class="output">
+                <textarea id="result-textarea" name="result" cols="60" rows="7">
+                    <%= ciphertext %>
+               </textarea>
+
+                <button type="submit" form="img-form" class="btn2" id="btn4"> Process</button>
+                <form id="download-form" method="GET" action="/download"></form>
+                <button class="btn2" id="btn2" type="submit" form='download-form'> Download</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About Company</h5>
+                    <p>A company overview (also known as company information or a company summary) is an essential
+                        part
+                        of a business plan. It's an overview of the most important points about your company—your
+                        history, management team, location, mission
+                        statement and legal structure.</p>
+                    <ul class="list-unstyled">
+
+                        <a href="#!">link </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Vision AI</h5>
+
+                    <p>
+                        Derive insights from your images in the cloud or at the edge with AutoML Vision or use
+                        pre-trained Vision API models to detect emotion, understand text, and more.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">OCR</h5>
+                    <p>OCR, or optical character recognition, is one of the earliest addressed computer vision
+                        tasks,
+                        since in some aspects it does not require deep learning. Therefore there were different OCR
+                        implementations even before the deep learning
+                        boom in 2012, and some even dated back to 1914.
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright: Company Name</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+    <!-- Footer -->
+
+</body>
+
+</html>
