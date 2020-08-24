@@ -5,9 +5,10 @@ An OCR app with google cloud vision
 INSTALLATION:-
 
 1. Download the nodeapp.
-2. Run command "npm install"
-3. Run command "node index"
-4. Open the browser with the localhost:3333
+2. Put your apikey.json into the folder.
+3. Run command "npm install"
+4. Run command "node index"
+5. Open the browser with the localhost:3333
 
 
 UI change:
